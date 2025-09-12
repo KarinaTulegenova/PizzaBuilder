@@ -1,24 +1,30 @@
 public class Main {
     public static void main(String[] args) {
         Pizza pepperoni = new Pizza.Builder()
-                .setTopping("Pepperoni")
-                .setSize("Large")
-                .setDough("Thick")
-                .setSauce("Tomato sauce")
+                .withTopping("Pepperoni")
+                .withSize("Large")
+                .withDough("Thick")
+                .withSauce("Tomato sauce")
+                .withCheeseType("Mozzarella")
+                .withCrustType("Cheese-stuffed")
                 .build();
 
         Pizza margarita = new Pizza.Builder()
-                .setTopping("Mozzarella")
-                .setSize("Medium")
-                .setDough("Thin")
-                .setSauce("Tomato sauce")
+                .withTopping("Mozzarella")
+                .withSize("Medium")
+                .withDough("Thin")
+                .withSauce("Tomato sauce")
+                .withCheeseType("Cheddar")
+                .withCrustType("Classic")
                 .build();
 
         Pizza pesto_pizza = new Pizza.Builder()
-                .setTopping("Olive")
-                .setSize("Small")
-                .setDough("Thin")
-                .setSauce("Pesto")
+                .withTopping("Olive")
+                .withSize("Small")
+                .withDough("Thin")
+                .withSauce("Pesto")
+                .withCheeseType("Goat cheese")
+                .withCrustType("Thin crust")
                 .build();
 
         System.out.println(pepperoni);
